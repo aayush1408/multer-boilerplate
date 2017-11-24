@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<h1>File upload</h1>
+<%= typeof msg != 'undefined' ? msg : '' %>
+<form action="/upload" method="post" enctype="multipart/form-data"><br>
+    <input type="file" name="myImage"><br>
+    <input type="submit" name="">
+</form>
+</body>
+</html>
