@@ -3,6 +3,8 @@ const multer = require('multer');
 const path = require('path');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
+const Image = require('./models/image');
+mongoose.connect('mongodb://aayush:aayush@ds111059.mlab.com:11059/schoolshop');
 //Set storage engine
 const storage = multer.diskStorage({
     destination: './public/uploads',
